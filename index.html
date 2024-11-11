@@ -1,68 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pat's Salmon Cookies</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pat's Salmon Cookies</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Pat's Salmon Cookies</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sales.html">Sales Data</a>
-        </nav>
-    </header>
-    <main>
-        <section id="about">
-            <img src="assets/logo.png" alt="Pat's Salmon Cookies Logo">
-            <h2>About Us</h2>
-            <p>Welcome to Pat's Salmon Cookies! A unique blend of sweetness and sustainability.</p>
-        </section>
-        <section id="locations">
-            <h2>Locations</h2>
-            <p>Seattle, Tokyo, Dubai, Paris, Lima</p>
-        </section>
-    </main>
-    <footer>
-        <p>Contact us: info@salmoncookies.com | (555) 123-4567</p>
-    </footer>
-</body>
-</html>
-sales.html
-This file displays sales data projections.
+  <!-- Header with Navigation -->
+  <header>
+    <h1>Pat's Salmon Cookies</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sales.html">Sales Data</a>
+    </nav>
+  </header>
 
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sales Data - Pat's Salmon Cookies</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Sales Projections</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sales.html">Sales Data</a>
-        </nav>
-    </header>
-    <main>
-        <section id="sales-data">
-            <h2>Sales Projections by Location</h2>
-            <div id="locations-sales">
-                <!-- Sales data will be dynamically injected here by app.js -->
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>Contact us: info@salmoncookies.com | (555) 123-4567</p>
-    </footer>
-    <script src="js/app.js"></script>
+  <!-- Main content area -->
+  <main>
+    <!-- This section dynamically displays store sales data -->
+    <section id="root"></section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pat's Salmon Cookies. All rights reserved.</p>
+  </footer>
+
+  <!-- Link to the JavaScript file to dynamically generate content -->
+  <script src="app.js"></script>
 </body>
 </html>
