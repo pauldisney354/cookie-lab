@@ -1,0 +1,41 @@
+/* General styling */
+body {
+  font-family: Georgia, serif;
+  background-color: white;
+  color: black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1em;
+  color: salmon;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: 'Righteous', sans-serif;
+  color: salmon;
+}
+
+#sales-data ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#sales-data ul li {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.8em;
+}
