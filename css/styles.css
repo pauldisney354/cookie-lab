@@ -1,0 +1,183 @@
+/* General styling */
+body {
+  font-family: Georgia, serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1em;
+  color: salmon;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: lightsalmon;
+}
+
+h1, h2 {
+  font-family: 'Righteous', sans-serif;
+  color: salmon;
+}
+
+/* Sales Table Styling */
+#root {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#salesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Georgia, serif;
+}
+
+#salesTable th,
+#salesTable td {
+  padding: 12px 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#salesTable th {
+  background-color: black;
+  color: salmon;
+  font-family: 'Righteous', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+#salesTable tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+#salesTable tbody tr:hover {
+  background-color: #fff5f3;
+}
+
+#salesTable td:first-child {
+  font-family: 'Righteous', sans-serif;
+  color: salmon;
+  text-align: left;
+  background-color: #fafafa;
+}
+
+#salesTable .daily-total {
+  font-weight: bold;
+  background-color: #fff5f3;
+  color: #333;
+}
+
+#salesTable tfoot {
+  font-family: 'Righteous', sans-serif;
+}
+
+#salesTable tfoot tr {
+  background-color: black;
+  color: salmon;
+}
+
+#salesTable tfoot td {
+  border-color: #333;
+}
+
+#salesTable .grand-total {
+  background-color: salmon;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.8em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #root {
+    padding: 10px;
+  }
+
+  #salesTable {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0.9em;
+  }
+  
+  #salesTable th,
+  #salesTable td {
+    padding: 8px 6px;
+  }
+
+  header {
+    padding: 0.5em;
+  }
+
+  nav a {
+    margin: 0 0.5em;
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  footer {
+    position: static;
+    padding: 0.5em;
+  }
+}
+
+/* Print Styles */
+@media print {
+  header nav,
+  footer {
+    display: none;
+  }
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  #salesTable {
+    box-shadow: none;
+  }
+
+  #salesTable th {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  #salesTable tfoot tr {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  #salesTable .grand-total {
+    background-color: white !important;
+    color: black !important;
+    font-weight: bold;
+  }
+}
