@@ -163,5 +163,25 @@ function initialize() {
   renderSalesTable();
 }
 
+document.getElementById('locationForm').addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent page reload on form submission
+
+  // Get input values
+  const locationName = event.target.locationName.value;
+  const minCustomers = parseInt(event.target.minCustomers.value);
+  const maxCustomers = parseInt(event.target.maxCustomers.value);
+  const avgCookies = parseFloat(event.target.avgCookies.value);
+
+  // Create a new store instance
+  const newStore = new Store(locationName, minCustomers, maxCustomers, avgCookies);
+  newStore.estimate();
+
+  // Add to the stores array
+  stores.push(newStore);
+
+  // Re-render the table
+  renderSalesTable();
+});
+
 // Run the application
 initialize();

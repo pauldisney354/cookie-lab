@@ -16,6 +16,25 @@
     </nav>
   </header>
 
+  <form id="locationForm">
+    <fieldset>
+      <legend>Add a New Cookie Stand</legend>
+      <label for="locationName">Location Name:</label>
+      <input type="text" id="locationName" name="locationName" required>
+      
+      <label for="minCustomers">Minimum Customers Per Hour:</label>
+      <input type="number" id="minCustomers" name="minCustomers" required>
+      
+      <label for="maxCustomers">Maximum Customers Per Hour:</label>
+      <input type="number" id="maxCustomers" name="maxCustomers" required>
+      
+      <label for="avgCookies">Average Cookies Per Sale:</label>
+      <input type="number" step="0.1" id="avgCookies" name="avgCookies" required>
+      
+      <button type="submit">Add Location</button>
+    </fieldset>
+  </form>
+  
   <main>
     <section id="root">
       <!-- Store sales data will be populated here by JavaScript -->
